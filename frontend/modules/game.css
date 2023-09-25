@@ -192,7 +192,7 @@
     padding:.5rem;
     
   }
-  #btn{
+  #btnham{
     display:none;
   }
   @media(max-width:800px){
@@ -220,7 +220,7 @@
       margin:0 1rem;
      
     }
-    #btn{
+    #btnham{
       display:flex;
       padding:.5rem 1rem;
       font-size:1rem;
@@ -234,7 +234,7 @@
       display:block;
       width:20px;
       border-top:2px solid;
-      color:#fff;
+      color:#1f1d1d;
     }
     #hamburguer::after, #hamburguer::before{
       content:'';
