@@ -23,7 +23,7 @@ async function userform(){
     };
 
     try {
-        const response = await fetch("http://localhost:8080/register",{
+        const response = await fetch("https://patchdquiz.onrender.com/register",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
@@ -52,7 +52,7 @@ async function usersign(){
         password:document.getElementById("password1").value
     };
     try {
-        const response = await fetch("http://localhost:8080/login",{
+        const response = await fetch("https://patchdquiz.onrender.com/login",{
             method:"POST",
             headers:{
             "Content-Type":"application/json",
