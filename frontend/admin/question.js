@@ -24,7 +24,7 @@ async function quesssyess()
     };
 
     try {
-        const response = await fetch("http://localhost:8080/setq",{
+        const response = await fetch("https://patchdquiz.onrender.com/setq",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
