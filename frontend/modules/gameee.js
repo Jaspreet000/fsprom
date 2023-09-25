@@ -23,7 +23,7 @@ fetchqueshtml();
 
 async function fetchqueshtml(){
     try {
-        const response = await fetch("http://localhost:8080/quedata/html");
+        const response = await fetch("https://patchdquiz.onrender.com/quedata/html");
         const res = await response.json();
 
         let l=0;
@@ -172,7 +172,7 @@ async function fetchqueshtml(){
 
             async function setscore(){
                 try {
-                    const response =await fetch ("http://localhost:8080/scores",{
+                    const response =await fetch ("https://patchdquiz.onrender.com/scores",{
                         method:"POST",
                         headers:{
                             "Content-Type":"application/json"
