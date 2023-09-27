@@ -192,7 +192,7 @@
     padding:.5rem;
     
   }
-  #btn{
+  #btnham{
     display:none;
   }
   @media(max-width:800px){
@@ -204,7 +204,7 @@
       top:70px;
       right:0px;
       background:#95e982;
-      opacity: 0.6;
+      opacity: 0.9;
       height:0px;
       transition:.6s;
       z-index:1000;
@@ -220,7 +220,7 @@
       margin:0 1rem;
      
     }
-    #btn{
+    #btnham{
       display:flex;
       padding:.5rem 1rem;
       font-size:1rem;
@@ -234,7 +234,7 @@
       display:block;
       width:20px;
       border-top:2px solid;
-      color:#fff;
+      color:#242323;
     }
     #hamburguer::after, #hamburguer::before{
       content:'';
