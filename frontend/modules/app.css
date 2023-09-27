@@ -337,3 +337,9 @@
     }
       
     }
+
+@media(max-width:566px){
+      #heading{
+        font-size:40px;
+      }
+    }
