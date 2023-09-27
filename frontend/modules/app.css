@@ -5,10 +5,13 @@
     /* font-size: 62.5%; */
   }
   
-  body{
+body{
     background: url(https://t4.ftcdn.net/jpg/02/41/67/49/360_F_241674902_1i8NSWE483IGlRkPPvRWWZuLTFBnqIWh.jpg) no-repeat;
-    background-size: cover;
-    /* height:180vh; */
+    background-size: 150vw 100%;
+    /* height:100vh; */
+  }
+  #bodyyy{
+    height:100vh;
   }
   * {
     box-sizing: border-box;
@@ -342,5 +345,8 @@
     {
       #heading{
         font-size:40px;
+      }
+        #aggain,#homeee,#logout{
+        width:80%;
       }
     }
