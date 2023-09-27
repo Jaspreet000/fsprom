@@ -24,7 +24,7 @@ fetchquescss();
 
 async function fetchquescss(){
     try {
-        const response = await fetch("https://patchdquiz.onrender.com/quedata/html");
+        const response = await fetch("https://patchdquiz.onrender.com/quedata/css");
         const res = await response.json();
 
         let l=0;
