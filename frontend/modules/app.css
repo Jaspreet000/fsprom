@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  background-color: rgb(190, 194, 192);
+    /* font-size: 62.5%; */
+  }
+  
+
+  #bodyyy{
+    height:100vh;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #494b48;
+  }
+  #usernamee{
+    font-size: 35px;
+    color: #2a2b29;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    color: #313231;
+    margin-bottom: 5rem;
+  }
+  
+  h1 > span {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+  
+  /* UTILITIES */
+  
+  .container {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 80rem; */
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .container > * {
+    width: 100%;
+  }
+  .cards{
+    display: flex;
+    width:100%;
+    height:30%;
+    gap:30px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: rgb(234, 234, 234);
+  }
+  .leftcont{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    margin: auto;
+    margin-left:10px;
+  }
+  .leftcont>p{
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+  .rightcont{
+    width:40%;
+  }
+  .rightcont>img{
+    height:90%;
+    animation-name: floating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear ;
+  }
+
+  @keyframes floating {
+    0%{
+      transform: translate(0px,0px);
+    }
+    15%{
+      transform: rotate(-3deg);
+    }
+    25%{
+      transform: translate(0,20px);
+      
+    }
+    50%{
+      transform:translateX(0,40px);
+    }
+    75%{
+      transform:translateY(0,20px);
+      transform: rotate(2deg);
+    }
+  }
+
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* BUTTONS */
+  .btn {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    width: 35%;
+    text-align: center;
+    border: 0.1rem solid #9c9e9c;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #323231;
+    background-color: rgb(236, 236, 236);
+  }
+  /* .secondone{
+    margin-left: 200px;
+  } */
+  
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+  
+  /* FORMS */
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+
+  @media(max-width:860px)
+  {
+    .cards{
+      flex-direction: column-reverse;
+      text-align: center;
+      height:35%;
+    }
+    .second{
+      flex-direction: column;
+    }
+    .leftcont{
+      width:95%;
+    }
+    .rightcont{
+      text-align: center;
+      margin: 0px auto;
+    }
+    .btn{
+      margin: 0px auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media(max-width:579px){
+    .leftcont>p{
+      font-size: 1rem;
+    }
+    .rightcont{
+      min-width: 200px;
+      max-width:300px;
+    }
+  }
+
+  /*navbar*/
+
+  a
+  {
+    color:#2c2a2a;
+    text-decoration:none;
+    font-family:sans-serif;
+    transition:.6s;
+  }
+
+  a:hover
+  {
+    color:rgb(145, 144, 144);
+  }
+
+  #logo
+  {
+    width:130px;
+    height: 75px;
+  }
+  #header
+  {
+    box-sizing:border-box;
+    height:80px;
+    padding:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#868986;
+    width: 100%;
+  
+  }
+  #menu{
+    display:flex;
+    list-style:none;
+    gap:.5rem;
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  #menu a{
+    display:block;
+    padding:.5rem;
+    
+  }
+  #btnham{
+    display:none;
+  }
+  @media(max-width:800px){
+   
+    #menu{
+      display:block;
+      position:absolute;
+      width:100%;
+      top:70px;
+      right:0px;
+      background:#d5d7d4;
+      opacity: 0.9;
+      height:0px;
+      transition:.6s;
+      z-index:1000;
+      visibility:hidden;
+      overflow-y:hidden;
+    }  
+    #nav.active #menu{
+      height: calc(100vh - 70px);
+      visibility:visible;
+    }
+    #menu a {
+      padding:1rem 0;
+      margin:0 1rem;
+     
+    }
+    #btnham{
+      display:flex;
+      padding:.5rem 1rem;
+      font-size:1rem;
+      border:none;
+      background:none;
+      cursor:pointer;
+      gap:0.5rem
+      
+  }
+    #hamburguer{
+      display:block;
+      width:20px;
+      border-top:2px solid;
+      color:#1f1d1d;
+    }
+    #hamburguer::after, #hamburguer::before{
+      content:'';
+      display:block;
+      width:20px;
+      height:2px;
+      background:currentColor;
+      margin-top:5px;
+      transition:.3s;
+      position:relative
+      
+    }
+    #nav.active #hamburguer{
+      border-top-color:transparent;
+    }
+      #nav.active #hamburguer::before{
+        transform:rotate(135deg);
+    }
+      #nav.active #hamburguer::after{
+        transform:rotate(-135deg);
+        top:-7px;
+    }
+      
+    }
+
+    @media(max-width:566px)
+    {
+      #heading{
+        font-size:40px;
+      }
+        #aggain,#homeee,#logout{
+        width:80%;
+      }
+    }

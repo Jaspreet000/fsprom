@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="login.css" />
+    <title>Sign in & Sign up Form</title>
+  </head>
+  <body>
+    <header id="header">
+      <img id="logo" src="../img/logo.png" alt="LOGO">
+      <nav id="nav">
+        <button id="btnham"><span id="hamburguer"><span></button>
+        <ul id="menu">
+          <li><a href="../">Home</a></li>
+          <li><a href="login.html">Login/Signup</a></li>
+          <li><a href="../">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input id="email1" type="text" placeholder="Email" required="" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input id="password1" type="password" placeholder="Password" required="" />
+            </div>
+            <input id="login" type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Follow us on :</p>
+            <div class="social-media">
+              <a href="https://github.com/Jaspreet000" class="social-icon">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://instagram.com/__._jass_i_.__?igshid=MzRlODBiNWFlZA==" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input id="username2" type="text" placeholder="Username" required="" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input id="email2" type="email" placeholder="Email" required="" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input id="password2" type="password" placeholder="Password" required=""/>
+            </div>
+            <input id="signup" type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Follow us on :</p>
+            <div class="social-media">
+                <a href="https://github.com/Jaspreet000" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://instagram.com/__._jass_i_.__?igshid=MzRlODBiNWFlZA==" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Welcome aboard new member to the world of quizzes created by Patch'd organization ... ! 
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+          <img src="../img/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              Patch'd organization welcomes back our old warrior. I am sure you're ready to take more challenges. 
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+          <img src="../img/register.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="login.js"></script>
+  <script src="../nav.js"></script>
+</html>
